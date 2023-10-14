@@ -23,13 +23,11 @@ const TaskPage = () => {
   };
 
   const toggleTask = (taskId, title,done) => {
-    // editTaskData({ id:taskId, body: {title, done}})
   };
 
   const deleteTask = (taskId) => {
     console.log(taskId);
     taskDelete({ id: taskId });
-    // setTasks(tasks.filter((task) => task.id !== taskId));
   };
 
   const editTask = (taskId, newTitle) => {
@@ -75,7 +73,6 @@ const TaskPage = () => {
                     onEditTask={editTask}
                 />
             ))}
-            {/* ... rest of your component */}
         </div>
     </div>
 );
