@@ -5,7 +5,7 @@ const TaskItem = ({ task, onToggleTask }) => {
     <div>
       <input
         type="checkbox"
-        checked={task.completed}
+        checked={task.done}
         onChange={() => onToggleTask(task.id)}
       />
       <span>{task.title}</span>
