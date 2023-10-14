@@ -2,11 +2,13 @@ import express from "express";
 import dotenv from "dotenv";
 import taskRouter from "./routes/tasks.js";
 import mongoose from "mongoose";
+import cors from "cors";
 dotenv.config();
 // creating an express instance
 const app = express();
 
 //simple middelware
+app.use(cors())
 app.use(express.json());
 app.use((req, res, next) => {
   console.log(req.path, req.method);
